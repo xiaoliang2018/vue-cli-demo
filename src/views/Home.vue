@@ -2,6 +2,7 @@
   <div class="home">
     <div>{{userData}}223213232133211</div>
     <div>你好</div>
+    <div>454645645</div>
   </div>
 </template>
 
