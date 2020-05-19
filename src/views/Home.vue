@@ -2,7 +2,7 @@
   <div class="home">
     <div>{{userData}}</div>
     <button @click="synchronization">同步修改</button>
-    <button @click="asynchronous">异步修改</button>
+    <button @click="asynchronous">异步3213123213修改</button>
   </div>
 </template>
 
