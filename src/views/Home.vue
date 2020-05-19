@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div>{{userData}}223213232133211</div>
+    <div>你好</div>
   </div>
 </template>
 
