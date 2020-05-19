@@ -3,7 +3,8 @@
     <div>{{userData}}</div>
     <button @click="synchronization">同步修改</button>
     <button @click="asynchronous">异步修改</button>
-    <div>1111</div>
+    <div>222</div>
+    <datagrid>3333</datagrid>
   </div>
 </template>
 
