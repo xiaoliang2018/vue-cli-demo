@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <div>{{userData}}223213232133211</div>
-    <div>你好</div>
-    <div>454645645</div>
+    <div>{{userData}}</div>
+    <button @click="synchronization">同步修改</button>
+    <button @click="asynchronous">异步修改</button>
   </div>
 </template>
 
@@ -19,6 +19,14 @@ export default {
   },
   mounted(){
     this.userData = this.$store.state.userData;
+  },
+  methods:{
+    synchronization(){
+      this.$store.commit('updateName','同步修改名称')
+    },
+    asynchronous(){
+      this.$store.dispatch('updateNameAjax','异步修改名称');
+    }
   },
   components: {
   }
