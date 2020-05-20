@@ -4,6 +4,7 @@
     <button @click="synchronization">同步修改</button>
     <button @click="asynchronous">异步修改</button>
     <div>222</div>
+    <button v-if="$commonJs.isLogin()">111 </button>
   </div>
 </template>
 
@@ -15,10 +16,11 @@ export default {
   name: 'Home',
   data(){
     return {
-      userData:[]
+      userData:[],
     }
   },
   mounted(){
+    // console.log(this.$commonJs.isLogin(),'sdsdadsfasdfasdfsfdf')
     this.userData = this.$store.state.userData;
   },
   methods:{
