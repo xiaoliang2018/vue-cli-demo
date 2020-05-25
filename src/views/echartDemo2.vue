@@ -537,7 +537,7 @@ export default {
               roam: true,
               itemStyle: {
                 normal: {
-                  areaColor: '#eee',
+                  areaColor: '#ededed',
                   borderColor: '#097bba',
                 },
                 emphasis: {
@@ -853,19 +853,19 @@ export default {
       >div:nth-child(1){
         width:100%;
         height:32.33vh;
-        border:1px solid #eee;
+        border:1px solid #ededed;
       }
       >div:nth-child(2){
         width:100%;
         height:32.33vh;
-        border:1px solid #eee;
+        border:1px solid #ededed;
         margin-top:1vh;
       }
       >div:nth-child(3){
         width:100%;
         height:32.33vh;
         margin-top:1vh;
-        border:1px solid #eee;
+        border:1px solid #ededed;
       }
     }
     .center{
@@ -875,7 +875,7 @@ export default {
       >div:nth-child(1){
         width:100%;
         height:25vh;
-        border-bottom:1px solid #eee;
+        border-bottom:1px solid #ededed;
         >div{
           display: flex;
           flex-wrap: wrap;
@@ -933,19 +933,19 @@ export default {
       >div:nth-child(1){
         width:100%;
         height:32.33vh;
-        border:1px solid #eee;
+        border:1px solid #ededed;
       }
       >div:nth-child(2){
         margin-top:1vh;
         width:100%;
         height:32.33vh;
-        border:1px solid #eee;
+        border:1px solid #ededed;
       }
       >div:nth-child(3){
         margin-top:1vh;
         width:100%;
         height:32.33vh;
-        border:1px solid #eee;
+        border:1px solid #ededed;
       }
     }
   }

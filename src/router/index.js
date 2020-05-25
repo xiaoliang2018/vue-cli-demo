@@ -27,7 +27,12 @@ Vue.use(VueRouter)
     path: '/echartDemo2',
     name: 'echartDemo2',
     component: () => import(/* webpackChunkName: "echartDemo2" */ '../views/echartDemo2.vue')
-  }
+  },
+  {
+    path: '/echartDemo3',
+    name: 'echartDemo3',
+    component: () => import(/* webpackChunkName: "echartDemo3" */ '../views/echartDemo3.vue')
+  },
 ]
 
 const router = new VueRouter({
