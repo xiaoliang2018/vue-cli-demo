@@ -10,14 +10,14 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (about.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  // },
   {
     path: '/echartDemo1',
     name: 'echartDemo1',
@@ -32,6 +32,11 @@ Vue.use(VueRouter)
     path: '/echartDemo3',
     name: 'echartDemo3',
     component: () => import(/* webpackChunkName: "echartDemo3" */ '../views/echartDemo3.vue')
+  },
+  {
+    path: '/drag',
+    name: 'drag',
+    component: () => import(/* webpackChunkName: "drag" */ '../views/drag.vue')
   },
 ]
 

@@ -1,10 +1,15 @@
 <template>
   <div class="home">
-    <div>{{userData}}</div>
+		<ul id="main">
+			<li><router-link  to="/echartDemo1" >demo1</router-link></li>
+			<li><router-link  to="/echartDemo2">demo2</router-link></li>
+			<li><router-link  to="/echartDemo3">demo3</router-link></li>
+      <li><router-link  to="/drag">拖拽</router-link></li>
+		</ul>
+    <!-- <div>{{userData}}</div>
     <button @click="synchronization">同步修改</button>
     <button @click="asynchronous">异步修改</button>
-    <div>222</div>
-    <button v-if="$commonJs.isLogin()">111 </button>
+    <button v-if="$commonJs.isLogin()">111 </button> -->
   </div>
 </template>
 
@@ -20,7 +25,6 @@ export default {
     }
   },
   mounted(){
-    // console.log(this.$commonJs.isLogin(),'sdsdadsfasdfasdfsfdf')
     this.userData = this.$store.state.userData;
   },
   methods:{

@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+		<!-- <ul id="main">
+			<li><router-link  to="/echartDemo1" >demo1</router-link></li>
+			<li><router-link  to="/echartDemo2">demo2</router-link></li>
+			<li><router-link  to="/echartDemo3">demo3</router-link></li>
+		</ul> -->
     <router-view/>
   </div>
 </template>

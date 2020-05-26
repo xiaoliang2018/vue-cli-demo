@@ -698,7 +698,7 @@ export default {
           var mapEcharts = document.getElementById('right3');
           let node = echarts.init(mapEcharts);
           node.setOption(option)
-        }
+        },
     }
 }
 </script>
