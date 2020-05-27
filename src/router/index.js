@@ -38,6 +38,11 @@ Vue.use(VueRouter)
     name: 'drag',
     component: () => import(/* webpackChunkName: "drag" */ '../views/drag.vue')
   },
+  {
+    path: '/selectQuery',
+    name: 'selectQuery',
+    component: () => import(/* webpackChunkName: "selectQuery" */ '../views/selectQuery.vue')
+  },
 ]
 
 const router = new VueRouter({

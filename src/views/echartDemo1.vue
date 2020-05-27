@@ -164,7 +164,10 @@ export default {
           let option = {
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b}"
+                formatter: (data)=>{
+                  // console.log(data.data.testData,'data')
+                  return data.data.testData;
+                }
             },
             series: [
                 {
@@ -197,10 +200,10 @@ export default {
                         borderWidth: 1
                     },
                     data: [
-                        {value: 8694, name: '下单数量\n\n8694'},
-                        {value: 20000, name: '咨询数量\n\n20000'},
-                        {value: 8323, name: '支付数量\n\n8323'},
-                        {value: 20000, name: '访客数量\n\n20000'},
+                        {value: 100, name: '下单数量\n\n8694',testData:'8694'},
+                        {value: 75, name: '咨询数量\n\n20000',testData:'20000'},
+                        {value: 50, name: '支付数量\n\n8323',testData:'8323'},
+                        {value: 25, name: '访客数量\n\n20000',testData:'20000'},
                     ]
                 }
             ]
