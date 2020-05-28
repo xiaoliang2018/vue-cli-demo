@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+  @windowWidth:1280px;
   .twoBoxCnt{
     display:flex;
     flex-wrap: wrap;
@@ -18,9 +19,10 @@
     }
   }
   .selectQueryCnt{
+
     .one{
-      width:90%;
-      margin-left:5%;
+      width:@windowWidth;
+      margin:0 auto;
       >p{
         font-size: 0.75rem;
         padding:0.5rem 0;
@@ -70,8 +72,8 @@
 
     }
     .two{
-      width:90%;
-      margin-left:5%;
+      width:@windowWidth;
+      margin:0 auto;
       >p{
         font-size: 0.75rem;
         padding:0.5rem 0;

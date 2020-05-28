@@ -14,11 +14,13 @@
             </div>
           </ul>
           <ul class="content">
-            <div v-for="(item,index) in leftDialogList" :key="index" 
-            style="background:red;cursor:pointer;" 
-            @click="dialogVisible = true;">
-              {{item.name}}的弹出框
+            <div>
+              <el-button v-for="(item,index) in leftDialogList" :key="index" 
+              @click="dialogVisible = true;">
+                {{item.name}}的弹出框
+              </el-button>
             </div>
+            
             <li class="tagList" v-for="(item,index) in bottomTagData" :key="index" data-type="top">
               <span>{{item.name}}</span>
               <span title='取消' class='tagClose' @click="closeFn(item,index)">×</span>

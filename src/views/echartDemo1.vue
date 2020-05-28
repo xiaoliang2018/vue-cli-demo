@@ -45,11 +45,6 @@
           <div id="right3" style="width:100%;height:100%;"></div>
         </div>
       </div>
-
-
-
-
-      
     </div>
 </template>
 
@@ -57,6 +52,7 @@
 import echarts from 'echarts';
 import china from './../assets/map/china';
 import "echarts-wordcloud/dist/echarts-wordcloud.min";
+import mapJson from "./../assets/map/mapAllAddress.json";
 import common from './../assets/js/common'
 export default {
     data(){
@@ -103,6 +99,8 @@ export default {
     },
     mounted(){
       this.loadInit();
+      // '北京':[113.54909, 22.198951]
+      console.log(mapJson[0],'mapJson')
     },
     methods:{
         loadInit(){ //初始化
@@ -309,15 +307,15 @@ export default {
           var mapName = 'china'
           var data = [
             {
-              name: "陕西",
+              name: "汕头",
               value: 145
             },
             {
-              name: "甘肃",
+              name: "潮州",
               value: 66
             },
             {
-              name: "青海",
+              name: "广州",
               value: 24
             },
             {
@@ -325,31 +323,33 @@ export default {
               value: 25
             },
             {
-              name: "台湾",
+              name: "揭阳",
               value: 10000
             },
             {
-              name: "新疆",
+              name: "石家庄",
               value: 10006
             },
             {
-              name: "广东",
+              name: "深圳",
               value: 10006
             },
           ];
-          var geoCoordMap = {};
+          // var geoCoordMap = {};
           /*获取地图数据*/
-          var mapFeatures = echarts.getMap(mapName).geoJson.features;
-          mapFeatures.forEach(function (v) {
-            // 地区名称
-            var name = v.properties.name;
-            // 地区经纬度
-            geoCoordMap[name] = v.properties.cp;
-          });
-          var max = 480,
-            min = 9; // todo 
-          var maxSize4Pin = 150,
-            minSize4Pin = 20;
+          // var mapFeatures = echarts.getMap(mapName).geoJson.features;
+          // mapFeatures.forEach(function (v) {
+          //   // 地区名称
+          //   var name = v.properties.name;
+          //   // 地区经纬度
+          //   geoCoordMap[name] = v.properties.cp;
+          // });
+          // console.log(geoCoordMap)
+          var geoCoordMap = mapJson[0];
+          // var max = 480,
+          //   min = 9; // todo 
+          // var maxSize4Pin = 150,
+          //   minSize4Pin = 20;
 
           var convertData = function (data) {
             var res = [];
@@ -666,7 +666,7 @@ export default {
           let dataArr =[];
           for(let i=0; i<100; i++){
               dataArr.push({
-                  name: " 没有",
+                  name: "浏览器",
                   value: 30,
               })
           }
