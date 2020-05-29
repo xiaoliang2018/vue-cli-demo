@@ -7,6 +7,8 @@
       <li><router-link  to="/drag">拖拽</router-link></li>
       <li><router-link  to="/selectQuery">查询条件</router-link></li>
 		</ul>
+
+    <div class="testClass">111</div>
     <!-- <div>{{userData}}</div>
     <button @click="synchronization">同步修改</button>
     <button @click="asynchronous">异步修改</button>
@@ -15,6 +17,12 @@
 
   </div>
 </template>
+<style>
+  .testClass{
+    font-size:100px;
+  }
+
+</style>
 
 <script>
 

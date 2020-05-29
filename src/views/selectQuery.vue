@@ -102,9 +102,9 @@
               border:1px solid #c6e2ff;
               // border-right:none;
               color:#606266;
-              padding:5px 0.5rem;
-              position: relative;
-              top: 1px;
+              padding:8px 0.5rem;
+              // position: relative;
+              // top: 1px;
               cursor: pointer;
             }
             >span.spanButtton.active{
@@ -188,7 +188,7 @@
 
      </div>
      <div class="two">
-       <p>高级选项{{oneActiveIndex}}</p>
+       <p>高级选项</p>
        <div>
          <div class="left">分组显示</div>
          <div class="right">
